@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87B7A4A585E7151FB2F12D65 /* Pods_HiraganaConvertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54A0AE76C4E9A8E8CA30EAD /* Pods_HiraganaConvertTests.framework */; };
+		BE16C7CDD1B371D020520048 /* Pods_HiraganaConvertUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892EB4B9AB910CCE9FD656A1 /* Pods_HiraganaConvertUITests.framework */; };
+		C6BFF5A1D2B9EAF47D9360B9 /* Pods_HiraganaConvert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9867012E6F2BB707272E1D8 /* Pods_HiraganaConvert.framework */; };
+		FD146F86229A4AD000BCC224 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F85229A4AD000BCC224 /* Configuration.swift */; };
+		FD146F8A229A4D7100BCC224 /* BaseRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F89229A4D7100BCC224 /* BaseRequestable.swift */; };
+		FD146F8D229A4E1200BCC224 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F8C229A4E1200BCC224 /* Configurable.swift */; };
+		FD146F8F229A4F1300BCC224 /* HiraganaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F8E229A4F1300BCC224 /* HiraganaRequest.swift */; };
+		FD146F92229A509A00BCC224 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F91229A509A00BCC224 /* Requestable.swift */; };
+		FD146F95229A555000BCC224 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F94229A555000BCC224 /* Constant.swift */; };
+		FD146F97229A570E00BCC224 /* HiraganaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F96229A570E00BCC224 /* HiraganaService.swift */; };
+		FD185939229A9CEC00AE4E60 /* Hiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD185938229A9CEC00AE4E60 /* Hiragana.swift */; };
+		FD9000C3229A3C97008C2A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9000C2229A3C97008C2A92 /* AppDelegate.swift */; };
+		FD9000C5229A3C97008C2A92 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9000C4229A3C97008C2A92 /* InputViewController.swift */; };
+		FD9000C8229A3C97008C2A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9000C6229A3C97008C2A92 /* Main.storyboard */; };
+		FD9000CA229A3C99008C2A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9000C9229A3C99008C2A92 /* Assets.xcassets */; };
+		FD9000CD229A3C99008C2A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9000CB229A3C99008C2A92 /* LaunchScreen.storyboard */; };
+		FD9000D8229A3C99008C2A92 /* HiraganaConvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9000D7229A3C99008C2A92 /* HiraganaConvertTests.swift */; };
+		FD9000E3229A3C99008C2A92 /* HiraganaConvertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9000E2229A3C99008C2A92 /* HiraganaConvertUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD9000D4229A3C99008C2A92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9000B7229A3C97008C2A92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD9000BE229A3C97008C2A92;
+			remoteInfo = HiraganaConvert;
+		};
+		FD9000DF229A3C99008C2A92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9000B7229A3C97008C2A92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD9000BE229A3C97008C2A92;
+			remoteInfo = HiraganaConvert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05AD40C31432F8A6C04545E7 /* Pods-HiraganaConvertTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConvertTests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConvertTests/Pods-HiraganaConvertTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A0BDE9A3901AB8CDE88C023 /* Pods-HiraganaConvertTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConvertTests.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConvertTests/Pods-HiraganaConvertTests.release.xcconfig"; sourceTree = "<group>"; };
+		57DB977A36598044F05321AB /* Pods-HiraganaConvertUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConvertUITests.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConvertUITests/Pods-HiraganaConvertUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		892EB4B9AB910CCE9FD656A1 /* Pods_HiraganaConvertUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConvertUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB845D1899A6D2AD57A6013 /* Pods-HiraganaConvertUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConvertUITests.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConvertUITests/Pods-HiraganaConvertUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C54A0AE76C4E9A8E8CA30EAD /* Pods_HiraganaConvertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConvertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9867012E6F2BB707272E1D8 /* Pods_HiraganaConvert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConvert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0693BFAFBA91CC31029940 /* Pods-HiraganaConvert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConvert.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConvert/Pods-HiraganaConvert.release.xcconfig"; sourceTree = "<group>"; };
+		DD5B076680F3B14E82EAA706 /* Pods-HiraganaConvert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConvert.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConvert/Pods-HiraganaConvert.debug.xcconfig"; sourceTree = "<group>"; };
+		FD146F85229A4AD000BCC224 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		FD146F89229A4D7100BCC224 /* BaseRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestable.swift; sourceTree = "<group>"; };
+		FD146F8C229A4E1200BCC224 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		FD146F8E229A4F1300BCC224 /* HiraganaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaRequest.swift; sourceTree = "<group>"; };
+		FD146F91229A509A00BCC224 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		FD146F94229A555000BCC224 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FD146F96229A570E00BCC224 /* HiraganaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaService.swift; sourceTree = "<group>"; };
+		FD185938229A9CEC00AE4E60 /* Hiragana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hiragana.swift; sourceTree = "<group>"; };
+		FD9000BF229A3C97008C2A92 /* HiraganaConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9000C2229A3C97008C2A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD9000C4229A3C97008C2A92 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		FD9000C7229A3C97008C2A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD9000C9229A3C99008C2A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD9000CC229A3C99008C2A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD9000CE229A3C99008C2A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9000D3229A3C99008C2A92 /* HiraganaConvertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaConvertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9000D7229A3C99008C2A92 /* HiraganaConvertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertTests.swift; sourceTree = "<group>"; };
+		FD9000D9229A3C99008C2A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9000DE229A3C99008C2A92 /* HiraganaConvertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaConvertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9000E2229A3C99008C2A92 /* HiraganaConvertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertUITests.swift; sourceTree = "<group>"; };
+		FD9000E4229A3C99008C2A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD9000BC229A3C97008C2A92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BFF5A1D2B9EAF47D9360B9 /* Pods_HiraganaConvert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9000D0229A3C99008C2A92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B7A4A585E7151FB2F12D65 /* Pods_HiraganaConvertTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9000DB229A3C99008C2A92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE16C7CDD1B371D020520048 /* Pods_HiraganaConvertUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11E34588B403540ACCC01DB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9867012E6F2BB707272E1D8 /* Pods_HiraganaConvert.framework */,
+				C54A0AE76C4E9A8E8CA30EAD /* Pods_HiraganaConvertTests.framework */,
+				892EB4B9AB910CCE9FD656A1 /* Pods_HiraganaConvertUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DED4A6F16684CFD3CBA5ED1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD5B076680F3B14E82EAA706 /* Pods-HiraganaConvert.debug.xcconfig */,
+				DA0693BFAFBA91CC31029940 /* Pods-HiraganaConvert.release.xcconfig */,
+				05AD40C31432F8A6C04545E7 /* Pods-HiraganaConvertTests.debug.xcconfig */,
+				3A0BDE9A3901AB8CDE88C023 /* Pods-HiraganaConvertTests.release.xcconfig */,
+				57DB977A36598044F05321AB /* Pods-HiraganaConvertUITests.debug.xcconfig */,
+				9BB845D1899A6D2AD57A6013 /* Pods-HiraganaConvertUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD146F84229A4A8000BCC224 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FD146F90229A506300BCC224 /* Sevices */,
+				FD146F8B229A4E0300BCC224 /* Protocols */,
+				FD146F88229A4D5D00BCC224 /* Request */,
+				FD146F85229A4AD000BCC224 /* Configuration.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FD146F87229A4BD300BCC224 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FD9000C9229A3C99008C2A92 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FD146F88229A4D5D00BCC224 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FD146F8E229A4F1300BCC224 /* HiraganaRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		FD146F8B229A4E0300BCC224 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FD146F91229A509A00BCC224 /* Requestable.swift */,
+				FD146F8C229A4E1200BCC224 /* Configurable.swift */,
+				FD146F89229A4D7100BCC224 /* BaseRequestable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FD146F90229A506300BCC224 /* Sevices */ = {
+			isa = PBXGroup;
+			children = (
+				FD146F96229A570E00BCC224 /* HiraganaService.swift */,
+			);
+			path = Sevices;
+			sourceTree = "<group>";
+		};
+		FD146F93229A553A00BCC224 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FD146F94229A555000BCC224 /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FD9000B6229A3C97008C2A92 = {
+			isa = PBXGroup;
+			children = (
+				FD9000C1229A3C97008C2A92 /* HiraganaConvert */,
+				FD9000D6229A3C99008C2A92 /* HiraganaConvertTests */,
+				FD9000E1229A3C99008C2A92 /* HiraganaConvertUITests */,
+				FD9000C0229A3C97008C2A92 /* Products */,
+				9DED4A6F16684CFD3CBA5ED1 /* Pods */,
+				11E34588B403540ACCC01DB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD9000C0229A3C97008C2A92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD9000BF229A3C97008C2A92 /* HiraganaConvert.app */,
+				FD9000D3229A3C99008C2A92 /* HiraganaConvertTests.xctest */,
+				FD9000DE229A3C99008C2A92 /* HiraganaConvertUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD9000C1229A3C97008C2A92 /* HiraganaConvert */ = {
+			isa = PBXGroup;
+			children = (
+				FD9000F4229A3F29008C2A92 /* Application */,
+				FD9000F3229A3F1B008C2A92 /* Models */,
+				FD9000F2229A3F05008C2A92 /* Extensions */,
+				FD9000F1229A3EED008C2A92 /* Core */,
+				FD9000F0229A3ECC008C2A92 /* Controllers */,
+				FD146F87229A4BD300BCC224 /* Resource */,
+				FD9000C6229A3C97008C2A92 /* Main.storyboard */,
+				FD9000CB229A3C99008C2A92 /* LaunchScreen.storyboard */,
+				FD9000CE229A3C99008C2A92 /* Info.plist */,
+			);
+			path = HiraganaConvert;
+			sourceTree = "<group>";
+		};
+		FD9000D6229A3C99008C2A92 /* HiraganaConvertTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD9000D7229A3C99008C2A92 /* HiraganaConvertTests.swift */,
+				FD9000D9229A3C99008C2A92 /* Info.plist */,
+			);
+			path = HiraganaConvertTests;
+			sourceTree = "<group>";
+		};
+		FD9000E1229A3C99008C2A92 /* HiraganaConvertUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD9000E2229A3C99008C2A92 /* HiraganaConvertUITests.swift */,
+				FD9000E4229A3C99008C2A92 /* Info.plist */,
+			);
+			path = HiraganaConvertUITests;
+			sourceTree = "<group>";
+		};
+		FD9000F0229A3ECC008C2A92 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD9000C4229A3C97008C2A92 /* InputViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FD9000F1229A3EED008C2A92 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FD146F93229A553A00BCC224 /* Constants */,
+				FD146F84229A4A8000BCC224 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FD9000F2229A3F05008C2A92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FD9000F3229A3F1B008C2A92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD185938229A9CEC00AE4E60 /* Hiragana.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD9000F4229A3F29008C2A92 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FD9000C2229A3C97008C2A92 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD9000BE229A3C97008C2A92 /* HiraganaConvert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9000E7229A3C99008C2A92 /* Build configuration list for PBXNativeTarget "HiraganaConvert" */;
+			buildPhases = (
+				C1468045593E4CB2D865DBBB /* [CP] Check Pods Manifest.lock */,
+				FD9000BB229A3C97008C2A92 /* Sources */,
+				FD9000BC229A3C97008C2A92 /* Frameworks */,
+				FD9000BD229A3C97008C2A92 /* Resources */,
+				2D475E55A3141726390D1143 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiraganaConvert;
+			productName = HiraganaConvert;
+			productReference = FD9000BF229A3C97008C2A92 /* HiraganaConvert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD9000D2229A3C99008C2A92 /* HiraganaConvertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9000EA229A3C99008C2A92 /* Build configuration list for PBXNativeTarget "HiraganaConvertTests" */;
+			buildPhases = (
+				3EDD4E931965D29DE3D6A954 /* [CP] Check Pods Manifest.lock */,
+				FD9000CF229A3C99008C2A92 /* Sources */,
+				FD9000D0229A3C99008C2A92 /* Frameworks */,
+				FD9000D1229A3C99008C2A92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD9000D5229A3C99008C2A92 /* PBXTargetDependency */,
+			);
+			name = HiraganaConvertTests;
+			productName = HiraganaConvertTests;
+			productReference = FD9000D3229A3C99008C2A92 /* HiraganaConvertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD9000DD229A3C99008C2A92 /* HiraganaConvertUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9000ED229A3C99008C2A92 /* Build configuration list for PBXNativeTarget "HiraganaConvertUITests" */;
+			buildPhases = (
+				7AD97E79C73662BE75349725 /* [CP] Check Pods Manifest.lock */,
+				FD9000DA229A3C99008C2A92 /* Sources */,
+				FD9000DB229A3C99008C2A92 /* Frameworks */,
+				FD9000DC229A3C99008C2A92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD9000E0229A3C99008C2A92 /* PBXTargetDependency */,
+			);
+			name = HiraganaConvertUITests;
+			productName = HiraganaConvertUITests;
+			productReference = FD9000DE229A3C99008C2A92 /* HiraganaConvertUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD9000B7229A3C97008C2A92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Bac.Tran;
+				TargetAttributes = {
+					FD9000BE229A3C97008C2A92 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					FD9000D2229A3C99008C2A92 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FD9000BE229A3C97008C2A92;
+					};
+					FD9000DD229A3C99008C2A92 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = FD9000BE229A3C97008C2A92;
+					};
+				};
+			};
+			buildConfigurationList = FD9000BA229A3C97008C2A92 /* Build configuration list for PBXProject "HiraganaConvert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD9000B6229A3C97008C2A92;
+			productRefGroup = FD9000C0229A3C97008C2A92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD9000BE229A3C97008C2A92 /* HiraganaConvert */,
+				FD9000D2229A3C99008C2A92 /* HiraganaConvertTests */,
+				FD9000DD229A3C99008C2A92 /* HiraganaConvertUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD9000BD229A3C97008C2A92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9000CD229A3C99008C2A92 /* LaunchScreen.storyboard in Resources */,
+				FD9000CA229A3C99008C2A92 /* Assets.xcassets in Resources */,
+				FD9000C8229A3C97008C2A92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9000D1229A3C99008C2A92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9000DC229A3C99008C2A92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D475E55A3141726390D1143 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiraganaConvert/Pods-HiraganaConvert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EDD4E931965D29DE3D6A954 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiraganaConvertTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AD97E79C73662BE75349725 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiraganaConvertUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1468045593E4CB2D865DBBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiraganaConvert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD9000BB229A3C97008C2A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD146F8F229A4F1300BCC224 /* HiraganaRequest.swift in Sources */,
+				FD146F97229A570E00BCC224 /* HiraganaService.swift in Sources */,
+				FD146F92229A509A00BCC224 /* Requestable.swift in Sources */,
+				FD146F8D229A4E1200BCC224 /* Configurable.swift in Sources */,
+				FD146F95229A555000BCC224 /* Constant.swift in Sources */,
+				FD146F8A229A4D7100BCC224 /* BaseRequestable.swift in Sources */,
+				FD146F86229A4AD000BCC224 /* Configuration.swift in Sources */,
+				FD9000C5229A3C97008C2A92 /* InputViewController.swift in Sources */,
+				FD185939229A9CEC00AE4E60 /* Hiragana.swift in Sources */,
+				FD9000C3229A3C97008C2A92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9000CF229A3C99008C2A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9000D8229A3C99008C2A92 /* HiraganaConvertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9000DA229A3C99008C2A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9000E3229A3C99008C2A92 /* HiraganaConvertUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD9000D5229A3C99008C2A92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD9000BE229A3C97008C2A92 /* HiraganaConvert */;
+			targetProxy = FD9000D4229A3C99008C2A92 /* PBXContainerItemProxy */;
+		};
+		FD9000E0229A3C99008C2A92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD9000BE229A3C97008C2A92 /* HiraganaConvert */;
+			targetProxy = FD9000DF229A3C99008C2A92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD9000C6229A3C97008C2A92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD9000C7229A3C97008C2A92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD9000CB229A3C99008C2A92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD9000CC229A3C99008C2A92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD9000E5229A3C99008C2A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD9000E6229A3C99008C2A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD9000E8229A3C99008C2A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD5B076680F3B14E82EAA706 /* Pods-HiraganaConvert.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiraganaConvert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tad.com.HiraganaConvert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD9000E9229A3C99008C2A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0693BFAFBA91CC31029940 /* Pods-HiraganaConvert.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiraganaConvert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tad.com.HiraganaConvert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD9000EB229A3C99008C2A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05AD40C31432F8A6C04545E7 /* Pods-HiraganaConvertTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiraganaConvertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tad.com.HiraganaConvertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiraganaConvert.app/HiraganaConvert";
+			};
+			name = Debug;
+		};
+		FD9000EC229A3C99008C2A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0BDE9A3901AB8CDE88C023 /* Pods-HiraganaConvertTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiraganaConvertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tad.com.HiraganaConvertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiraganaConvert.app/HiraganaConvert";
+			};
+			name = Release;
+		};
+		FD9000EE229A3C99008C2A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57DB977A36598044F05321AB /* Pods-HiraganaConvertUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiraganaConvertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tad.com.HiraganaConvertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiraganaConvert;
+			};
+			name = Debug;
+		};
+		FD9000EF229A3C99008C2A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BB845D1899A6D2AD57A6013 /* Pods-HiraganaConvertUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HiraganaConvertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tad.com.HiraganaConvertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiraganaConvert;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD9000BA229A3C97008C2A92 /* Build configuration list for PBXProject "HiraganaConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9000E5229A3C99008C2A92 /* Debug */,
+				FD9000E6229A3C99008C2A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9000E7229A3C99008C2A92 /* Build configuration list for PBXNativeTarget "HiraganaConvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9000E8229A3C99008C2A92 /* Debug */,
+				FD9000E9229A3C99008C2A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9000EA229A3C99008C2A92 /* Build configuration list for PBXNativeTarget "HiraganaConvertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9000EB229A3C99008C2A92 /* Debug */,
+				FD9000EC229A3C99008C2A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9000ED229A3C99008C2A92 /* Build configuration list for PBXNativeTarget "HiraganaConvertUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9000EE229A3C99008C2A92 /* Debug */,
+				FD9000EF229A3C99008C2A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD9000B7229A3C97008C2A92 /* Project object */;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Input View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InputViewController" customModule="HiraganaConvert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sH3-RK-ftj">
+                                <rect key="frame" x="16" y="203" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power by bac.tran" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG0-JN-3rm">
+                                <rect key="frame" x="16" y="633" width="343" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8ID-X7-Jmi">
+                                <rect key="frame" x="93.5" y="120" width="187.5" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8ID-X7-Jmi" secondAttribute="height" multiplier="48:13" id="jTo-9M-Nnb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGg-t7-hoz">
+                                <rect key="frame" x="164" y="249" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="selectConvertToHiragana:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWO-m2-5Kf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="sH3-RK-ftj" secondAttribute="width" constant="32" id="1f8-gU-ZdB"/>
+                            <constraint firstItem="TGg-t7-hoz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4en-8i-nKE"/>
+                            <constraint firstItem="8ID-X7-Jmi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6FH-hl-DkK"/>
+                            <constraint firstItem="8ID-X7-Jmi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="Bma-aL-jtr"/>
+                            <constraint firstItem="sH3-RK-ftj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CRI-AX-siq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XG0-JN-3rm" secondAttribute="bottom" constant="16" id="Ljj-OI-fSP"/>
+                            <constraint firstItem="8ID-X7-Jmi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dtO-Ux-PxF"/>
+                            <constraint firstItem="XG0-JN-3rm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dyG-Ul-Zkt"/>
+                            <constraint firstItem="TGg-t7-hoz" firstAttribute="top" secondItem="sH3-RK-ftj" secondAttribute="bottom" constant="16" id="iYC-bl-WfV"/>
+                            <constraint firstAttribute="width" secondItem="XG0-JN-3rm" secondAttribute="width" constant="32" id="wtf-HU-Q84"/>
+                            <constraint firstItem="sH3-RK-ftj" firstAttribute="top" secondItem="8ID-X7-Jmi" secondAttribute="bottom" constant="32" id="zFe-h2-VuC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mInputTextField" destination="sH3-RK-ftj" id="YWZ-gR-QWX"/>
+                        <outlet property="mOutPutLabel" destination="XG0-JN-3rm" id="LOA-d9-UIE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122" y="-9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="432" height="117"/>
+    </resources>
+</document>
