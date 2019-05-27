@@ -1,20 +1,16 @@
 PODS:
   - Alamofire (4.7.2)
-  - ObjectMapper (3.2.0)
 
 DEPENDENCIES:
   - Alamofire
-  - ObjectMapper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  ObjectMapper: 5cccd2de6f253eda859df8116a5a554d9769e859
 
-PODFILE CHECKSUM: 289fdbb0161c5ea702b3b20c639681b00973b33b
+PODFILE CHECKSUM: 8e0aaeb23809227fd37bba2f87b14da9b5a69696
 
 COCOAPODS: 1.7.0
