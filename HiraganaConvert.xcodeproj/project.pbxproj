@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		87B7A4A585E7151FB2F12D65 /* Pods_HiraganaConvertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54A0AE76C4E9A8E8CA30EAD /* Pods_HiraganaConvertTests.framework */; };
 		BE16C7CDD1B371D020520048 /* Pods_HiraganaConvertUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892EB4B9AB910CCE9FD656A1 /* Pods_HiraganaConvertUITests.framework */; };
 		C6BFF5A1D2B9EAF47D9360B9 /* Pods_HiraganaConvert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9867012E6F2BB707272E1D8 /* Pods_HiraganaConvert.framework */; };
+		FD00B57D229AD79300046B00 /* HiraganaResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD00B57C229AD79300046B00 /* HiraganaResultViewController.swift */; };
+		FD00B57F229ADAD800046B00 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD00B57E229ADAD800046B00 /* BaseViewController.swift */; };
+		FD00B581229ADC3600046B00 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD00B580229ADC3600046B00 /* Storyboard.swift */; };
 		FD146F86229A4AD000BCC224 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F85229A4AD000BCC224 /* Configuration.swift */; };
 		FD146F8A229A4D7100BCC224 /* BaseRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F89229A4D7100BCC224 /* BaseRequestable.swift */; };
 		FD146F8D229A4E1200BCC224 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F8C229A4E1200BCC224 /* Configurable.swift */; };
@@ -17,7 +20,6 @@
 		FD146F92229A509A00BCC224 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F91229A509A00BCC224 /* Requestable.swift */; };
 		FD146F95229A555000BCC224 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F94229A555000BCC224 /* Constant.swift */; };
 		FD146F97229A570E00BCC224 /* HiraganaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD146F96229A570E00BCC224 /* HiraganaService.swift */; };
-		FD185939229A9CEC00AE4E60 /* Hiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD185938229A9CEC00AE4E60 /* Hiragana.swift */; };
 		FD9000C3229A3C97008C2A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9000C2229A3C97008C2A92 /* AppDelegate.swift */; };
 		FD9000C5229A3C97008C2A92 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9000C4229A3C97008C2A92 /* InputViewController.swift */; };
 		FD9000C8229A3C97008C2A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9000C6229A3C97008C2A92 /* Main.storyboard */; };
@@ -25,6 +27,7 @@
 		FD9000CD229A3C99008C2A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9000CB229A3C99008C2A92 /* LaunchScreen.storyboard */; };
 		FD9000D8229A3C99008C2A92 /* HiraganaConvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9000D7229A3C99008C2A92 /* HiraganaConvertTests.swift */; };
 		FD9000E3229A3C99008C2A92 /* HiraganaConvertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9000E2229A3C99008C2A92 /* HiraganaConvertUITests.swift */; };
+		FDAC5E07229BFE9A00277F0B /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC5E06229BFE9A00277F0B /* UITextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		C9867012E6F2BB707272E1D8 /* Pods_HiraganaConvert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiraganaConvert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0693BFAFBA91CC31029940 /* Pods-HiraganaConvert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConvert.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConvert/Pods-HiraganaConvert.release.xcconfig"; sourceTree = "<group>"; };
 		DD5B076680F3B14E82EAA706 /* Pods-HiraganaConvert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConvert.debug.xcconfig"; path = "Target Support Files/Pods-HiraganaConvert/Pods-HiraganaConvert.debug.xcconfig"; sourceTree = "<group>"; };
+		FD00B57C229AD79300046B00 /* HiraganaResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaResultViewController.swift; sourceTree = "<group>"; };
+		FD00B57E229ADAD800046B00 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FD00B580229ADC3600046B00 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		FD146F85229A4AD000BCC224 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		FD146F89229A4D7100BCC224 /* BaseRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestable.swift; sourceTree = "<group>"; };
 		FD146F8C229A4E1200BCC224 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
@@ -61,7 +67,6 @@
 		FD146F91229A509A00BCC224 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		FD146F94229A555000BCC224 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		FD146F96229A570E00BCC224 /* HiraganaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaService.swift; sourceTree = "<group>"; };
-		FD185938229A9CEC00AE4E60 /* Hiragana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hiragana.swift; sourceTree = "<group>"; };
 		FD9000BF229A3C97008C2A92 /* HiraganaConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9000C2229A3C97008C2A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD9000C4229A3C97008C2A92 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 		FD9000DE229A3C99008C2A92 /* HiraganaConvertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaConvertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9000E2229A3C99008C2A92 /* HiraganaConvertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertUITests.swift; sourceTree = "<group>"; };
 		FD9000E4229A3C99008C2A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDAC5E06229BFE9A00277F0B /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				FD9000C4229A3C97008C2A92 /* InputViewController.swift */,
+				FD00B57C229AD79300046B00 /* HiraganaResultViewController.swift */,
+				FD00B57E229ADAD800046B00 /* BaseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -257,6 +265,8 @@
 		FD9000F2229A3F05008C2A92 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FD00B580229ADC3600046B00 /* Storyboard.swift */,
+				FDAC5E06229BFE9A00277F0B /* UITextView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,7 +274,6 @@
 		FD9000F3229A3F1B008C2A92 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FD185938229A9CEC00AE4E60 /* Hiragana.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -413,7 +422,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiraganaConvert/Pods-HiraganaConvert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiraganaConvert/Pods-HiraganaConvert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiraganaConvert/Pods-HiraganaConvert-frameworks.sh\"\n";
@@ -482,13 +497,16 @@
 			files = (
 				FD146F8F229A4F1300BCC224 /* HiraganaRequest.swift in Sources */,
 				FD146F97229A570E00BCC224 /* HiraganaService.swift in Sources */,
+				FD00B57D229AD79300046B00 /* HiraganaResultViewController.swift in Sources */,
 				FD146F92229A509A00BCC224 /* Requestable.swift in Sources */,
+				FD00B581229ADC3600046B00 /* Storyboard.swift in Sources */,
 				FD146F8D229A4E1200BCC224 /* Configurable.swift in Sources */,
+				FD00B57F229ADAD800046B00 /* BaseViewController.swift in Sources */,
+				FDAC5E07229BFE9A00277F0B /* UITextView.swift in Sources */,
 				FD146F95229A555000BCC224 /* Constant.swift in Sources */,
 				FD146F8A229A4D7100BCC224 /* BaseRequestable.swift in Sources */,
 				FD146F86229A4AD000BCC224 /* Configuration.swift in Sources */,
 				FD9000C5229A3C97008C2A92 /* InputViewController.swift in Sources */,
-				FD185939229A9CEC00AE4E60 /* Hiragana.swift in Sources */,
 				FD9000C3229A3C97008C2A92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

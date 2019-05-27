@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bvr-Ec-pGY">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,62 +15,96 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="InputViewController" customModule="HiraganaConvert" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sH3-RK-ftj">
-                                <rect key="frame" x="16" y="203" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power by bac.tran" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG0-JN-3rm">
-                                <rect key="frame" x="16" y="633" width="343" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Japanese to Hiragana" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG0-JN-3rm">
+                                <rect key="frame" x="16" y="752" width="343" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8ID-X7-Jmi">
-                                <rect key="frame" x="93.5" y="120" width="187.5" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="8ID-X7-Jmi" secondAttribute="height" multiplier="48:13" id="jTo-9M-Nnb"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGg-t7-hoz">
-                                <rect key="frame" x="164" y="249" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pKS-6F-QMn" customClass="PlaceHolderTextView" customModule="HiraganaConvert" customModuleProvider="target">
+                                <rect key="frame" x="8" y="88" width="359" height="656"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
-                                    <action selector="selectConvertToHiragana:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWO-m2-5Kf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9Rj-Tb-NfQ"/>
                                 </connections>
-                            </button>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="sH3-RK-ftj" secondAttribute="width" constant="32" id="1f8-gU-ZdB"/>
-                            <constraint firstItem="TGg-t7-hoz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4en-8i-nKE"/>
-                            <constraint firstItem="8ID-X7-Jmi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6FH-hl-DkK"/>
-                            <constraint firstItem="8ID-X7-Jmi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="Bma-aL-jtr"/>
-                            <constraint firstItem="sH3-RK-ftj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CRI-AX-siq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XG0-JN-3rm" secondAttribute="bottom" constant="16" id="Ljj-OI-fSP"/>
-                            <constraint firstItem="8ID-X7-Jmi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dtO-Ux-PxF"/>
+                            <constraint firstItem="pKS-6F-QMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="4Mu-75-Qq9"/>
+                            <constraint firstItem="pKS-6F-QMn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ew0-Um-GQL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XG0-JN-3rm" secondAttribute="bottom" constant="8" id="Ljj-OI-fSP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pKS-6F-QMn" secondAttribute="trailing" constant="8" id="YTx-Ew-MJT"/>
                             <constraint firstItem="XG0-JN-3rm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dyG-Ul-Zkt"/>
-                            <constraint firstItem="TGg-t7-hoz" firstAttribute="top" secondItem="sH3-RK-ftj" secondAttribute="bottom" constant="16" id="iYC-bl-WfV"/>
+                            <constraint firstItem="XG0-JN-3rm" firstAttribute="top" secondItem="pKS-6F-QMn" secondAttribute="bottom" constant="8" id="roq-vt-mQf"/>
                             <constraint firstAttribute="width" secondItem="XG0-JN-3rm" secondAttribute="width" constant="32" id="wtf-HU-Q84"/>
-                            <constraint firstItem="sH3-RK-ftj" firstAttribute="top" secondItem="8ID-X7-Jmi" secondAttribute="bottom" constant="32" id="zFe-h2-VuC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aOk-Z0-w16"/>
                     <connections>
-                        <outlet property="mInputTextField" destination="sH3-RK-ftj" id="YWZ-gR-QWX"/>
-                        <outlet property="mOutPutLabel" destination="XG0-JN-3rm" id="LOA-d9-UIE"/>
+                        <outlet property="inputTextView" destination="pKS-6F-QMn" id="XeE-ds-fyh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-122" y="-9"/>
+            <point key="canvasLocation" x="591.20000000000005" y="-63.418290854572717"/>
+        </scene>
+        <!--Hiragana Result View Controller-->
+        <scene sceneID="uX9-ul-ziN">
+            <objects>
+                <viewController storyboardIdentifier="HiraganaResultViewController" id="oqe-T0-HHO" customClass="HiraganaResultViewController" customModule="HiraganaConvert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="he1-hf-ab4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xPp-qG-BPy">
+                                <rect key="frame" x="8" y="60" width="359" height="718"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vHz-jm-FzY" firstAttribute="bottom" secondItem="xPp-qG-BPy" secondAttribute="bottom" id="JGh-Uv-td6"/>
+                            <constraint firstItem="xPp-qG-BPy" firstAttribute="leading" secondItem="vHz-jm-FzY" secondAttribute="leading" constant="8" id="Y83-Yv-tqj"/>
+                            <constraint firstItem="vHz-jm-FzY" firstAttribute="trailing" secondItem="xPp-qG-BPy" secondAttribute="trailing" constant="8" id="pcA-MO-t4I"/>
+                            <constraint firstItem="xPp-qG-BPy" firstAttribute="top" secondItem="vHz-jm-FzY" secondAttribute="top" constant="16" id="qrq-7X-CcI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vHz-jm-FzY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hiraganaResultTextView" destination="xPp-qG-BPy" id="Kko-Jq-6nQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUY-Fk-Frf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="-44"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3LW-op-QLh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bvr-Ec-pGY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tmk-CK-mti">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YEr-2S-sdj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hh2-39-2y5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="-63.418290854572717"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="logo" width="432" height="117"/>
-    </resources>
 </document>
