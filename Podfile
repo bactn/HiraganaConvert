@@ -5,7 +5,7 @@ target 'HiraganaConvert' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Alamofire'
-  pod 'ObjectMapper'
+  #pod 'ObjectMapper'
   # Pods for HiraganaConvert
 
   target 'HiraganaConvertTests' do
