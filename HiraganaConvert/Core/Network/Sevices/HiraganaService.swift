@@ -11,6 +11,7 @@ struct HiraganaService: Requestable {
     func getHiragana(_ input: String, completionHandler: @escaping(_ output: String?, _ errorEnum: EnumErrorCode?) -> Void) {
         let hiraganaRequest = HiraganaRequest(with: input)
         request(hiraganaRequest).responseJSON(completionHandler: { (response) in
+            print("Data response: ", response)
             if let error = response.error {
                 print("Error response: ", error)
                 completionHandler(nil, .notConnectedToInternet)
