@@ -14,6 +14,7 @@ public let outputType = "hiragana"
 public let requestId = "record003"
 public let textViewPlaceHolder = "Enter text to here..."
 public let appName = "ひらがな"
+public let returnKeyboardText = "\n"
 
 enum EnumErrorCode {
     case notConnectedToInternet

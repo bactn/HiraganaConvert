@@ -10,27 +10,59 @@ import XCTest
 @testable import HiraganaConvert
 
 class HiraganaConvertTests: XCTestCase {
-    
+    var inputViewController: InputViewController?
+    var keyWindow: UIWindow?
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        keyWindow = UIApplication.shared.keyWindow
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        inputViewController = storyboard.instantiateViewController(withClass: InputViewController.self)
+        let navigation = UINavigationController(rootViewController: inputViewController!)
+        keyWindow?.rootViewController = navigation
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        keyWindow?.removeFromSuperview()
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    /// Normal case
+    func testSendRequest() {
+        // Given
+        let input = "大学"
+        let outputExpect = "だいがく"
+        
+        sendRequest(input, outputExpect)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    /// Empty case
+    func testSendRequestEmpty() {
+        // Given
+        let inputEmpty = ""
+        let outputEmptyExpect = ""
+        sendRequest(inputEmpty, outputEmptyExpect)
+    }
+    
+    /// Abnormal
+    func testSendRequestAbnormal() {
+        
+        // Given
+        let inputAbnormal = "-"
+        let outputAbnormalExpect = "-"
+        sendRequest(inputAbnormal, outputAbnormalExpect)
+    }
+    
+    func sendRequest(_ input: String, _ outputExpect: String) {
+        let e = expectation(description: "Test Request get Hiragana")
+        // When
+        inputViewController?.sendRequestGetHiragana(inputText: input) {(isCompleted) in
+            e.fulfill()
+        }
+        // Then
+        waitForExpectations(timeout: 20.0) { (error) in
+            if let vc = self.inputViewController?.navigationController?.viewControllers.last as? HiraganaResultViewController {
+                XCTAssertEqual(outputExpect, vc.hiraganaOutPut)
+            }
         }
     }
-    
 }

@@ -9,9 +9,9 @@
 import UIKit
 
 class InputViewController: BaseViewController {
-
+    
     @IBOutlet var inputTextView: PlaceHolderTextView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         inputTextView.returnKeyType = .done
@@ -19,26 +19,31 @@ class InputViewController: BaseViewController {
         inputTextView.placeHolder = textViewPlaceHolder
     }
     
-    func sendRequestGetHiragana(inputText: String) {
+    func sendRequestGetHiragana(inputText: String, _ completionHandler: @escaping(_ status: Bool) -> Void) {
         let hiraganaService = HiraganaService()
         hiraganaService.getHiragana(inputText) { (outPut, error) in
             if let outPut = outPut {
                 self.showHiraganaResultViewController(with: outPut)
+                completionHandler(true)
             } else {
                 // Check error code and show dialog
+                completionHandler(false)
             }
+            
         }
     }
 }
 
 extension InputViewController: UITextViewDelegate {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if text == "\n" {
+        if text == returnKeyboardText {
             textView.resignFirstResponder()
             if textView.text.isEmpty {
                 // Show dialog empty
             } else {
-                sendRequestGetHiragana(inputText: textView.text)
+                sendRequestGetHiragana(inputText: textView.text) { (isCompleted) in
+                    
+                }
             }
             return false
         }
